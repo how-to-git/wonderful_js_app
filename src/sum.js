@@ -1,5 +1,5 @@
 function sum(a, b) {
-  if (typeof a != "number" || typeof b != "number") {
+  if ((typeof a != "number" && typeof a != "string") || (typeof b != "number" && typeof b != "string")) {
     throw new Error("Invalid Argument");
   }
 
