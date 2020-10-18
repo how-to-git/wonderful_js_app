@@ -9,6 +9,18 @@ script:
   - npm run test
 after_success:
   - npm run coveralls
+before_deploy:
+  - mkdir docs
+  - mkdir docs/src
+  - touch docs/index.html
+  - node site.js
+  - git add ./docs/
+  - git commit -m "build"
+deploy:
+  cleanup: false
+  provider: surge
+  project: ./docs/
+  domain: super-user.surge.sh
 cache: npm
 notifications:
   email: false

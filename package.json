@@ -17,5 +17,8 @@
     "@types/jest": "^26.0.10",
     "coveralls": "^3.1.0",
     "jest": "^26.4.2"
+  },
+  "dependencies": {
+    "fs-extra": "^9.0.1"
   }
 }
