@@ -1,0 +1,21 @@
+{
+  "name": "wonderful_js_app",
+  "version": "1.0.0",
+  "description": "My Wonderful JavaScript Applicarion",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "coveralls": "coveralls < .coverage/lcov.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/how-to-git/wonderful_js_app.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "coveralls": "^3.1.0",
+    "jest": "^26.4.2"
+  }
+}
